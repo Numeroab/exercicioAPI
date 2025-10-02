@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "admin-uuid-12345",
+      "nome": "Administrador",
+      "email": "admin@email.com",
+      "password": "$2a$10$hashed_password_admin",
+      "role": "admin",
+      "dataCriacao": "2024-01-15T10:00:00.000Z",
+      "dataAtualizacao": "2024-01-15T10:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-uuid-12345",
+      "nome": "iPhone 15",
+      "descricao": "Smartphone Apple iPhone 15 128GB",
+      "preco": 4999.99,
+      "categoria": "smartphones",
+      "estoque": 50,
+      "ativo": true,
+      "dataCriacao": "2024-01-15T10:00:00.000Z",
+      "dataAtualizacao": "2024-01-15T10:00:00.000Z"
+    },
+    {
+      "id": "prod-uuid-67890",
+      "nome": "Samsung Galaxy S23",
+      "descricao": "Smartphone Samsung Galaxy S23 256GB",
+      "preco": 3999.99,
+      "categoria": "smartphones",
+      "estoque": 30,
+      "ativo": true,
+      "dataCriacao": "2024-01-15T10:00:00.000Z",
+      "dataAtualizacao": "2024-01-15T10:00:00.000Z"
+    }
+  ]
+}
