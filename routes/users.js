@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const authenticateToken = require('../middleware/auth');
+const authenticateToken = require('../middleware/auth'); // ✅ ../middleware/
 
 const {
     getAllUsers,
     getUserById,
     updateUser,
     deleteUser
-} = require('../controllers/usersController');
+} = require('../controllers/usersController'); // ✅ ../controllers/
 
 // Todas as rotas de usuários exigem autenticação
 router.get('/', authenticateToken, getAllUsers);

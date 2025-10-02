@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router();
-const authenticateToken = require('../middleware/auth');
-const adminMiddleware = require('../middleware/admin');
+const authenticateToken = require('../middleware/auth'); // ✅ ../middleware/
+const adminMiddleware = require('../middleware/admin'); // ✅ ../middleware/
 
 const {
     getAllProducts,
     getProductById,
-    getProductByName,
+    getProductByName, // ✅ CORRIGIDO: getProductByName (não getProducByName)
     createProduct,
     updateProduct,
     deleteProduct
-} = require('../controllers/productsController');
+} = require('../controllers/productsController'); // ✅ ../controllers/
 
 // Rotas públicas (qualquer um pode acessar)
 router.get('/', getAllProducts);

@@ -1,8 +1,10 @@
 const express = require('express');
 const cors = require('cors');
+
+// ✅ CORREÇÃO: Importar das pastas corretas
 const authRoutes = require('./routes/auth');
+const usersRoutes = require('./routes/users'); 
 const productsRoutes = require('./routes/products');
-const usersRoutes = require('./routes/users');
 
 const app = express();
 
@@ -12,8 +14,8 @@ app.use(express.json());
 
 // Routes
 app.use('/auth', authRoutes);
-app.use('/products', productsRoutes);
 app.use('/users', usersRoutes);
+app.use('/products', productsRoutes);
 
 // Rota de saúde
 app.get('/', (req, res) => {
