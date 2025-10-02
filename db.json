@@ -8,6 +8,15 @@
       "role": "admin",
       "dataCriacao": "2024-01-15T10:00:00.000Z",
       "dataAtualizacao": "2024-01-15T10:00:00.000Z"
+    },
+    {
+      "id": "df9206ae-b603-49f4-843f-9b9961557ec7",
+      "nome": "Administrador",
+      "email": "admin@test.com",
+      "password": "$2a$10$/WQGX1UcDPojZTiRGnwKZOYJySpnWJKBYnFbGyUWKpEKjU3CFONyC",
+      "role": "admin",
+      "dataCriacao": "2025-10-02T16:06:14.429Z",
+      "dataAtualizacao": "2025-10-02T16:06:14.430Z"
     }
   ],
   "products": [
@@ -32,6 +41,17 @@
       "ativo": true,
       "dataCriacao": "2024-01-15T10:00:00.000Z",
       "dataAtualizacao": "2024-01-15T10:00:00.000Z"
+    },
+    {
+      "id": "c3fde8e0-e524-475d-802e-950ae1847807",
+      "nome": "iPhone 15",
+      "descricao": "Smartphone Apple",
+      "preco": 4999.99,
+      "categoria": "smartphones",
+      "estoque": 50,
+      "ativo": true,
+      "dataCriacao": "2025-10-02T16:07:44.633Z",
+      "dataAtualizacao": "2025-10-02T16:07:44.633Z"
     }
   ]
 }

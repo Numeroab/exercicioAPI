@@ -1,7 +1,13 @@
-// ❌ ERRADO - Caminho relativo errado
 const authenticateToken = require('./auth');
 
-// ✅ CORREÇÃO - Se auth.js está na raiz:
-const authenticateToken = require('../auth');
-// OU se estiver na mesma pasta:
-const authenticateToken = require('./auth');
+const adminMiddleware = (req, res, next) => {
+    authenticateToken(req, res, () => {
+        if (req.user && req.user.role === 'admin') {
+            next();
+        } else {
+            return res.status(403).json({ message: 'Acesso restrito a administradores' });
+        }
+    });
+};
+
+module.exports = adminMiddleware;
